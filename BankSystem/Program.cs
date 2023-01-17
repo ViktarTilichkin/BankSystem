@@ -19,7 +19,7 @@ namespace BankSystem
             rates.Add(new ExchangeRate((int)CurrencyCod.EUR, (int)CurrencyCod.BYN, 2.82));
             rates.Add(new ExchangeRate((int)CurrencyCod.PLN, (int)CurrencyCod.BYN, 0.062));
             rates.Add(new ExchangeRate((int)CurrencyCod.GBP, (int)CurrencyCod.BYN, 2.99));
-            Console.WriteLine(rates.Count);
+            Console.WriteLine(rates.Count);    
             Console.WriteLine(rates.FirstOrDefault(x => x.CurrencyFrom == (int)CurrencyCod.BYN && x.CurrencyTo == (int)CurrencyCod.USD));
         }
     }
