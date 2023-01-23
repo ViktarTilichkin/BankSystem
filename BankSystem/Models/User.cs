@@ -2,12 +2,16 @@ namespace BankSystem.Models;
 
 public class User
 {
-    public int Id { get; }
+    public int Id { get; } = 2;
     public string Name { get; set; } = "No name";
 
     public User(int id)
     {
         Id = id;
+    }
+    public User()
+    {
+
     }
     public User(int id, string name) : this(id)
     {
@@ -30,5 +34,9 @@ public class User
     public override int GetHashCode()
     {
         return Id * 1000 + Name.Length;
+    }
+    public override string ToString()
+    {
+        return $"Name {Name} Id {Id}";
     }
 }
