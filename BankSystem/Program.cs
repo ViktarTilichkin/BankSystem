@@ -22,10 +22,17 @@ namespace BankSystem
             // Console.WriteLine(rates.Count);    
             // Console.WriteLine(rates.FirstOrDefault(x => x.CurrencyFrom == (int)CurrencyCod.BYN && x.CurrencyTo == (int)CurrencyCod.USD));
 
-            var test = new OutClass<User, int>(user1, 5);
-            Console.WriteLine(test.GetPropertyT());
-            var usertest = test.GeneraitObjT();
-            Console.WriteLine(usertest);
+            //var test = new OutClass<User, int>(user1, 5);
+            //Console.WriteLine(test.GetPropertyT());
+            //var usertest = test.GeneraitObjT();
+            //Console.WriteLine(usertest);
+
+            var x = 258;
+            var y = (byte)x;
+            Console.WriteLine(y);
+            var array = new int[2, 3, 4, 5];
+            Console.WriteLine(Convert.ToBoolean(42));
+            var u = $"\\\"";
         }
     }
 }
